@@ -1,6 +1,7 @@
 package csd214.app.entities;
 
 import jakarta.persistence.*;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 import java.util.Objects;
@@ -13,6 +14,7 @@ public class MagazineEntity extends PublicationEntity {
     private int orderQty;
 
     @Column(name = "issue_date")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE) // Stores as DATE in MySQL (no time component)
     private Date currentIssue;
 
