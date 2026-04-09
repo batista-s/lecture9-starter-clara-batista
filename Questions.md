@@ -1,3 +1,11 @@
+**The Hidden ID:** In your magazine-form.html, you included <input type="hidden" th:field="*{id}" />. What would happen if you forgot to include this line, and a user tried to "Edit" an existing magazine? Why?
+
+**The PRG Pattern:** Why does our save method return "redirect:/magazines" instead of just returning the "magazine-list" HTML template directly?
+
+**Data Binding:** What is the purpose of the @ModelAttribute annotation in your @PostMapping method? What manual work does it save you from doing?
+
+**Fragments:** You used th:replace="~{fragments/navbar :: header}" on multiple pages. What is the primary benefit of this approach in a real-world application with 50+ HTML pages?
+
 Lab 7: 20 Multiple Choice Questions
 I will take up the questions in a later lecture.
 1. What does "SSR" stand for in the context of our Spring Boot application?
